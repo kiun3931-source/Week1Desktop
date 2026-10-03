@@ -5,9 +5,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        int intValue = -2147483648;
-
-        Debug.Log("int Data: " + intValue);
+        double score = 95.8;
+        int result = (int)score;
+        Debug.Log(result); 
     }
 
     // Update is called once per frame
