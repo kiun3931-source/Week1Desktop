@@ -5,9 +5,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // bool isClear = "true";
+        int intValue = -2147483648;
 
-        bool isClear = true;
+        Debug.Log("int Data: " + intValue);
     }
 
     // Update is called once per frame
