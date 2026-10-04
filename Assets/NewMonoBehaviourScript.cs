@@ -5,9 +5,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        double score = 95.8;
-        int result = (int)score;
-        Debug.Log(result); 
+        //const int MAX = 100;
+        int MAX = 100;
+         MAX = 200;
     }
 
     // Update is called once per frame
