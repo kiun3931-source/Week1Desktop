@@ -5,15 +5,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        int hp = 5;
-        if(hp <= 10)
+        int[] score = { 90, 80, 70 };
+        for(int i = 0; i<=score.Length; i++)
         {
-            Debug.Log("치명");
+            Debug.Log(score[i]);
         }
-        else if(hp <= 100)
-        {
-            Debug.Log("정상");
-        }
+
     }
     // Update is called once per frame
     void Update()
