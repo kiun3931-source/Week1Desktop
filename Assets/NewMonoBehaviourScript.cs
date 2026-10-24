@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.ObjectModel;
 using System.Collections;
+using NUnit.Framework;
+using System.Collections.Generic;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -9,10 +11,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
     
     void Start()
     {
-        Queue queue = new Queue();
-        queue.Enqueue(10);
-        queue.Enqueue(20);
-        Debug.Log(queue.Peek());
+        List<int> numbers = new List<int>();
+        numbers.Add(100);
+        int a = 10;
 
     }
 // Update is called once per frame
