@@ -7,20 +7,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
     
     void Start()
     {
-   
-}
-    class Animal
-    {
-        public  virtual void Move()
-        {
-            Debug.Log("Move");
-        }
+        Player player = new Player();
+        player.HP = 100;
     }
-    class Dog : Animal
+    public class Player
     {
-        public override void Move()
+        public int HP
         {
-            Debug.Log("Run");
+            get;
+            set;
         }
     }
 // Update is called once per frame
