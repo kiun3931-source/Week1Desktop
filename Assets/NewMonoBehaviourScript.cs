@@ -9,10 +9,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
    
 }
-    void Add(int a, int b)
+    class Player
     {
-        return;
+        private int hp;
+        public Player(int hp)
+        {
+            this.hp = hp;
+        }
     }
+    Player player = new Player(10);
 // Update is called once per frame
 void Update()
     {
