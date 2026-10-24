@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections.ObjectModel;
+using System.Collections;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -7,16 +9,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
     
     void Start()
     {
-        Player player = new Player();
-        player.HP = 100;
-    }
-    public class Player
-    {
-        public int HP
-        {
-            get;
-            set;
-        }
+        Queue queue = new Queue();
+        queue.Enqueue(10);
+        queue.Enqueue(20);
+        Debug.Log(queue.Peek());
+
     }
 // Update is called once per frame
 void Update()
