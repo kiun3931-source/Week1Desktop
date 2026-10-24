@@ -9,15 +9,20 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
    
 }
-    class Player
+    class Animal
     {
-        private int hp;
-        public Player(int hp)
+        public  virtual void Move()
         {
-            this.hp = hp;
+            Debug.Log("Move");
         }
     }
-    Player player = new Player(10);
+    class Dog : Animal
+    {
+        public override void Move()
+        {
+            Debug.Log("Run");
+        }
+    }
 // Update is called once per frame
 void Update()
     {
