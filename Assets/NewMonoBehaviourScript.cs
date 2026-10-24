@@ -1,8 +1,5 @@
 using UnityEngine;
-using System.Collections.ObjectModel;
-using System.Collections;
-using NUnit.Framework;
-using System.Collections.Generic;
+using System.IO;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -11,9 +8,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
     
     void Start()
     {
-        List<int> numbers = new List<int>();
-        numbers.Add(100);
-        int a = 10;
+        if (!Directory.Exists("Data"))
+        {
+            Directory.CreateDirectory("Data");
+        }
+        File.WriteAllText("Data/save.txt", "Hello");
+        string text = File.ReadAllText("Data/save.txt");
 
     }
 // Update is called once per frame
