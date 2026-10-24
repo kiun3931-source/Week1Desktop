@@ -8,13 +8,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
     
     void Start()
     {
-        if (!Directory.Exists("Data"))
-        {
-            Directory.CreateDirectory("Data");
-        }
-        File.WriteAllText("Data/save.txt", "Hello");
-        string text = File.ReadAllText("Data/save.txt");
-
+        FileStream fs = new FileStream("save.dat", FileMode.Create);
+        BinaryWriter writer = new BinaryWriter(fs);
+        writer.Write(100);
+        writer.Close();
     }
 // Update is called once per frame
 void Update()
